@@ -16,28 +16,28 @@ public class DepthFirst {
             
             int dx=-1;
             int dy=0;
-            if (searchpath(maze, x+dx,y+dy,path)){
+            if (searchpath(maze, x+dx,y,path)){
                 path.add(x);
                 path.add(y);
                 return true;
             }
             dx=1;
             dy=0;
-            if (searchpath(maze, x+dx,y+dy,path)){
+            if (searchpath(maze, x+dx,y,path)){
                 path.add(x);
                 path.add(y);
                 return true;
             }
             dx=0;
             dy=-1;
-            if (searchpath(maze, x+dx,y+dy,path)){
+            if (searchpath(maze, x,y+dy,path)){
                 path.add(x);
                 path.add(y);
                 return true;
             }
             dx=0;
             dy=1;
-            if (searchpath(maze, x+dx,y+dy,path)){
+            if (searchpath(maze, x,y+dy,path)){
                 path.add(x);
                 path.add(y);
                 return true;
